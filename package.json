@@ -1,0 +1,28 @@
+{
+  "name": "logline",
+  "displayName": "LogLine",
+  "description": "See the Log the way it needs to be seen.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.84.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [{
+      "command": "logline.helloWorld",
+      "title": "Log Lone"
+    }]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.84.0"
+  }
+}
