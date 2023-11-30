@@ -15,7 +15,24 @@
     "commands": [{
       "command": "logline.helloWorld",
       "title": "Log Lone"
-    }]
+    }],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "logline-container",
+          "title": "Log Line",
+          "icon": "resources/dep.png"
+        }
+      ]
+    },
+    "views": {
+      "logline-container": [
+        {
+          "id": "logline-view",
+          "name": "Log Line View"
+        }
+      ]
+    }
   },
   "scripts": {
     "lint": "eslint .",
