@@ -10,11 +10,11 @@
     "Other"
   ],
   "activationEvents": [],
-  "main": "./extension.js",
+  "main": "./src/extension.js",
   "contributes": {
     "commands": [{
       "command": "logline.helloWorld",
-      "title": "Log Lone"
+      "title": "Log Line"
     }],
     "viewsContainers": {
       "activitybar": [
@@ -28,7 +28,7 @@
     "views": {
       "logline-container": [
         {
-          "id": "logline-view",
+          "id": "testView",
           "name": "Log Line View"
         }
       ]
