@@ -29,8 +29,8 @@
       "logline-container": [
         {
           "type": "webview",
-          "id": "uniqueViewId",
-          "name": "Web View Hello World"
+          "id": "loglineview",
+          "name": "Log Line View"
         }        
       ]
     }
