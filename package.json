@@ -12,10 +12,12 @@
   "activationEvents": [],
   "main": "./src/extension.js",
   "contributes": {
-    "commands": [{
-      "command": "logline.helloWorld",
-      "title": "Log Line"
-    }],
+    "commands": [
+      {
+        "command": "logline.helloWorld",
+        "title": "Log Line"
+      }
+    ],
     "viewsContainers": {
       "activitybar": [
         {
@@ -31,7 +33,7 @@
           "type": "webview",
           "id": "loglineview",
           "name": "Log Line View"
-        }        
+        }
       ]
     }
   },
