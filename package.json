@@ -28,9 +28,10 @@
     "views": {
       "logline-container": [
         {
-          "id": "testView",
-          "name": "Log Line View"
-        }
+          "type": "webview",
+          "id": "uniqueViewId",
+          "name": "Web View Hello World"
+        }        
       ]
     }
   },
