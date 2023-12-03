@@ -31,8 +31,12 @@
       "logline-container": [
         {
           "type": "webview",
-          "id": "loglineview",
+          "id": "loglineSearch",
           "name": "Log Line View"
+        },
+        {
+          "id": "loglineResults",
+          "name": "Search Results"
         }
       ]
     }

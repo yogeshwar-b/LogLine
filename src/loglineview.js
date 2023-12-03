@@ -32,6 +32,7 @@ class LogLineView {
     webviewView.webview.onDidReceiveMessage((message) => {
       switch (message.command) {
         case "alert":
+          count=count+1;
           vscode.window.showInformationMessage(message.text + count);
           return;
       }
