@@ -10,12 +10,36 @@
     "Other"
   ],
   "activationEvents": [],
-  "main": "./extension.js",
+  "main": "./src/extension.js",
   "contributes": {
-    "commands": [{
-      "command": "logline.helloWorld",
-      "title": "Log Lone"
-    }]
+    "commands": [
+      {
+        "command": "logline.helloWorld",
+        "title": "Log Line"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "logline-container",
+          "title": "Log Line",
+          "icon": "resources/dep.png"
+        }
+      ]
+    },
+    "views": {
+      "logline-container": [
+        {
+          "type": "webview",
+          "id": "loglineSearch",
+          "name": "Log Line View"
+        },
+        {
+          "id": "loglineResults",
+          "name": "Search Results"
+        }
+      ]
+    }
   },
   "scripts": {
     "lint": "eslint .",
